@@ -12,12 +12,14 @@ defineProps<{
     <p v-else-if="type == 'p'">
         <slot></slot>
     </p>
-    <p v-else-if="type == 'small'" class="small">{{ content }}</p>
+    <p v-else-if="type == 'small'" class="small">
+        <slot></slot>
+    </p>
 </template>
 
 <style scoped>
 h1 {
-    font-weight: 700;
+    font-weight: 900;
     font-size: 44px;
     line-height: 60px;
     color: rgb(33, 36, 61);

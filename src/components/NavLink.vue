@@ -16,13 +16,13 @@ const props = defineProps<{
 a {
     color: black;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 20px;
     line-height: 1.5;
 }
 
 .router-link-active {
-    font-weight: 600;
+    font-weight: 700;
     color: rgb(255, 100, 100);
     pointer-events: none;
 }

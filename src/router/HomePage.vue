@@ -7,15 +7,24 @@ const router = useRouter()
 </script>
 
 <template>
-    <Typography type="h1" content="Home page" />
-    <Typography type="p">
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
-        velit mollit. Exercitation veniam consequat sunt nostrud amet.
-    </Typography>
-    <button @click="router.push('/auth')">Authorization</button>
+    <div>
+        <Typography type="h1" content="Home page" />
+        <Typography type="p">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
+            velit mollit. Exercitation veniam consequat sunt nostrud amet.
+        </Typography>
+        <button @click="router.push('/auth')">Authorization</button>
+    </div>
+    <img src="/images/tools.png" alt="tools image">
 </template>
 
 <style scoped>
+    div {
+        max-width: 500px;
+    }
+    img {
+        max-height: 290px;
+    }
     button {
         background-color: rgb(255, 100, 100);
         color: white;

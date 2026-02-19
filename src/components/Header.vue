@@ -7,6 +7,7 @@ import NavLink from '@/components/NavLink.vue';
     <header>
         <NavLink to="/" content="Home" />
         <NavLink to="/users" content="Users" />
+        <NavLink to="/profile" content="Profile" />
     </header>
 </template>
 
