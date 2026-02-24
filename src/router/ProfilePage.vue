@@ -1,3 +1,9 @@
 <script lang="ts" setup></script>
 
-<template>Profile</template>
+<template>
+    <!-- отрисовывать рандомного пользователя -->
+    <!-- реализовать в соответствии с макетом (1.5 балла) -->
+    <!-- бонус: рисовать аватарку (fe)male_profile.png в зависимости от пола (0.5 балла) -->
+
+    Profile
+</template>

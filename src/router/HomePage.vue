@@ -19,19 +19,25 @@ const router = useRouter()
 </template>
 
 <style scoped>
-    div {
-        max-width: 500px;
-    }
-    img {
-        max-height: 290px;
-    }
-    button {
-        background-color: rgb(255, 100, 100);
-        color: white;
-        font-size: 20px;
-        font-weight: 500;
-        padding: 7px 43px;
-        border: 0;
-        cursor: pointer;
-    }
+div {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+}
+
+img {
+    max-height: 290px;
+}
+
+button {
+    background-color: rgb(255, 100, 100);
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 7px 43px;
+    border: 0;
+    cursor: pointer;
+    width: 208px;
+}
 </style>
