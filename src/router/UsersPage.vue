@@ -1,6 +1,10 @@
 <script lang="ts" setup>
+import { ref } from 'vue';
 import Typography from '@/components/Typography.vue';
 import Paper from '@/components/Paper.vue';
+
+const users = ref()
+
 </script>
 
 <template>
