@@ -1,48 +1,38 @@
 # ithub-frontend-vue-users
 
-This template should help get you started developing with Vue 3 in Vite.
+_(контрольная точка №2)_
 
-## Recommended IDE Setup
+## Задание
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+(Макет)[https://www.figma.com/file/NfRkFdCH22pMltWMmjdDRP/Auth-pages-tamplate?type=design&node-id=0%3A1&mode=dev&t=xV0MRNPCqesL0tR5-1]
 
-## Recommended Browser Setup
+Реализовать приложение по макету, используя фреймворк `Vue` и библиотеку `vue-router`.
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+Необходимо реализовать 3 страницы: 
 
-## Type Support for `.vue` Imports in TS
+- __Home__. Страница `./router/HomePage.vue` должна встречать небольшим описанием, картинкой а также кнопкой с переходом на авторизацию `/login`.
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+- __Users__. Страница `./router/UsersPage.vue` должна осуществлять сетевой запрос на получение списка пользователей (Аутентификация не требуется)
 
-## Customize configuration
+- __Profile__. Страница `./router/ProfilePage.vue` должна получать информацию о первом доступном пользователе, включая картинку. 
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## Критерии оценивания
 
-## Project Setup
+Критерии указаны в формате комментариев в файлах `./router/ProfilePage.vue` и `./router/UsersPage.vue`
 
-```sh
-npm install
-```
+#### ProfilePage
 
-### Compile and Hot-Reload for Development
+- отрисовывать первого доступного пользователя в соответствии с макетом (1.5 балла)
+- бонус*: рисовать аватарку `(fe)male_profile.png` в зависимости от пола (0.5 балла)
 
-```sh
-npm run dev
-```
+#### UsersPage
 
-### Type-Check, Compile and Minify for Production
+- проверять, сколько юзеров прогрузилось в текущем запросе, и если это количество меньше пяти, то переставать отображать кнопку "Load More..." (1 балл)
+- добавить спиннер через `background-image` на диве или через `img` с векторной иконкой (0.5 балла)
+- добавить email (0.5 балла)
+- добавить стили для соответствия макету (0.5 балла)
+- бонус*: плюс 0.5 балла за анимацию спиннера
 
-```sh
-npm run build
-```
+## Формат сдачи
 
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+Прикрепить ответ ссылкой на собственную ветку (+ 0.5 балла) либо форк
