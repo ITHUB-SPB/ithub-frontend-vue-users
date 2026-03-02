@@ -4,7 +4,7 @@ _(контрольная точка №2)_
 
 ## Задание
 
-(Макет)[https://www.figma.com/file/NfRkFdCH22pMltWMmjdDRP/Auth-pages-tamplate?type=design&node-id=0%3A1&mode=dev&t=xV0MRNPCqesL0tR5-1]
+[Макет](https://www.figma.com/file/NfRkFdCH22pMltWMmjdDRP/Auth-pages-tamplate?type=design&node-id=0%3A1&mode=dev&t=xV0MRNPCqesL0tR5-1)
 
 Реализовать приложение по макету, используя фреймворк `Vue` и библиотеку `vue-router`.
 
